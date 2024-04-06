@@ -1,1 +1,1 @@
-# Spa-med-SPA
+# spa-med-spa
