@@ -1,42 +1,80 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    margin: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header {
+    padding: 0 25px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header img {
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding: 23px 10px 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header h1 {
+    font: lighter 32px Futura;
+    text-shadow: 0px 3px 5px #ffffff;
+    color: #88eaac;
+    display: inline-block;
 }
 
-.card {
-  padding: 2em;
+nav {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: white;
+    text-align: center;
+    padding: 12px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.read-the-docs {
-  color: #888;
+nav a {
+    font: bold 14px Arial;
+    color: #67be87;
+    text-decoration: none;
+    padding: 5px 25px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: #88eaac;
+}
+
+main {
+    display: flex;
+    padding: 25px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin: auto;
+    width: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.react-calendar {
+    background-color: #ffffff;
+    font: bold smaller Arial;
+}
+
+.react-calendar button {
+    background-color: #88eaac;
+    color: #ffffff;
+    font: bold medium Arial;
+    border-radius: 3px;
+    border-style: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.react-calendar__month-view__weekday {
+    color: pink;
 }
