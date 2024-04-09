@@ -1,10 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import MenuBar from "./components/MenuBar";
-import About from "./components/About";
-import Home from "./components/Home";
-import Reservation from "./components/Reservation";
-import Staff from "./components/Staff";
+import Main from "./components/Main";
 import { useState } from "react";
 
 function App() {
@@ -13,16 +10,7 @@ function App() {
         <>
             <Header />
             <MenuBar setPage={setPage} />
-            <main>
-                <div id="container">
-                    {{
-                        home: <Home />,
-                        reservation: <Reservation />,
-                        staff: <Staff />,
-                        about: <About />,
-                    }[page] || <Home />}
-                </div>
-            </main>
+            <Main page={page} />
         </>
     );
 }
