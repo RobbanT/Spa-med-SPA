@@ -1,7 +1,12 @@
+import Calendar from "react-calendar";
+
 function Reservation() {
-    <main>
-        <div id="container"></div>
-    </main>;
+    return (
+        <>
+            <h2>Bokning</h2>
+            <Calendar />
+        </>
+    );
 }
 
 export default Reservation;
