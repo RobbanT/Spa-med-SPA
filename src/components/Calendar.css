@@ -4,10 +4,13 @@
     padding: 25px;
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .react-calendar button {
     border-radius: 4px;
+    border: 1px solid #e5e5e527;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 
 .react-calendar__navigation {
@@ -44,7 +47,7 @@
 
 .container
     > div
-    > divs
+    > div
     > div.react-calendar__viewContainer
     > div
     > div

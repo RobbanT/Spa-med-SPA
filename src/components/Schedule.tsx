@@ -1,4 +1,5 @@
 import "./Schedule.css";
+import List from "./List";
 
 interface Props {
     date: Date;
@@ -6,25 +7,13 @@ interface Props {
 
 function Schedule(props: Props) {
     return (
-        <div id="inner-container">
+        <div className="inner-container">
             <h3>{props.date.toLocaleDateString()}</h3>
-            <div id="inner-container-left">
-                <h3>Varm</h3>
-                <button
-                    onClick={() => {
-                        console.log("hej");
-                    }}
-                >
-                    FM
-                </button>
-                <button>EM</button>
-                <button>Kväll</button>
+            <div id="left-inner-container">
+                <List title={"Varm"} />
             </div>
-            <div id="inner-container-right">
-                <h3>Kall</h3>
-                <button>FM</button>
-                <button>EM</button>
-                <button>Kväll</button>
+            <div id="right-inner-container">
+                <List title={"Kall"} />
             </div>
         </div>
     );
