@@ -10,10 +10,10 @@ function Schedule(props: Props) {
         <div className="inner-container">
             <h3>{props.date.toLocaleDateString()}</h3>
             <div id="left-inner-container">
-                <List title={"Varm"} />
+                <List title={"Varm"} states={[true, false, true]} />
             </div>
             <div id="right-inner-container">
-                <List title={"Kall"} />
+                <List title={"Kall"} states={[true, false, true]} />
             </div>
         </div>
     );

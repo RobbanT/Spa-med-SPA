@@ -1,17 +1,16 @@
 interface Props {
     title: string;
+    states: boolean[];
 }
 
 function List(props: Props) {
-    function SaveCart() {
-        localStorage.setItem("cart", JSON.stringify(this.#cart));
-    }
+    console.log(props.states);
     return (
         <div>
             <h3>{props.title}</h3>
-            <button>FM</button>
-            <button>EM</button>
-            <button>Kväll</button>
+            {props.states[0] ? <button>FM</button> : null}
+            {props.states[1] ? <button>EM</button> : null}
+            {props.states[2] ? <button>Kväll</button> : null}
         </div>
     );
 }
