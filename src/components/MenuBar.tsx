@@ -1,3 +1,5 @@
+import "./MenuBar.css";
+
 interface Props {
     setPage: (page: string) => void;
 }

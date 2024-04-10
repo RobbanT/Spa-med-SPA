@@ -1,3 +1,4 @@
+import "./Header.css";
 import logo from "../assets/spa-icon2.svg";
 
 function Header() {

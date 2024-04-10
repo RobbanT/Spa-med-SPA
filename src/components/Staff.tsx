@@ -1,6 +1,6 @@
 function Staff() {
     return (
-        <>
+        <div>
             <h2>Personal</h2>
             <article>
                 <p>
@@ -34,7 +34,7 @@ function Staff() {
                     asperiores fuga qui recusandae distinctio tempora corrupti dolorum nobis numquam, impedit ex?
                 </p>
             </article>
-        </>
+        </div>
     );
 }
 

@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <>
+        <div>
             <h2>Hem</h2>
             <article>
                 <p>
@@ -34,7 +34,7 @@ function Home() {
                     asperiores fuga qui recusandae distinctio tempora corrupti dolorum nobis numquam, impedit ex?
                 </p>
             </article>
-        </>
+        </div>
     );
 }
 

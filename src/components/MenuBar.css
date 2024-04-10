@@ -1,0 +1,20 @@
+nav {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: white;
+    text-align: center;
+    padding: 12px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav > a {
+    font: bold 14px Arial;
+    color: #67be87;
+    text-decoration: none;
+    padding: 5px 25px;
+}
+
+nav > a:hover {
+    cursor: pointer;
+    color: #88eaac;
+}

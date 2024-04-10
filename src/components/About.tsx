@@ -1,6 +1,6 @@
 function About() {
     return (
-        <>
+        <div>
             <h2>Om oss</h2>
             <article>
                 <p>
@@ -34,7 +34,7 @@ function About() {
                     asperiores fuga qui recusandae distinctio tempora corrupti dolorum nobis numquam, impedit ex?
                 </p>
             </article>
-        </>
+        </div>
     );
 }
 

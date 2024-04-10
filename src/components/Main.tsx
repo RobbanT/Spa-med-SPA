@@ -1,3 +1,4 @@
+import "./Main.css";
 import About from "./About";
 import Home from "./Home";
 import Reservation from "./Reservation";
@@ -10,7 +11,7 @@ interface Props {
 function Main(props: Props) {
     return (
         <main>
-            <div id="container">
+            <div className="container">
                 {{
                     home: <Home />,
                     reservation: <Reservation />,
