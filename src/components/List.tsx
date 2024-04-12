@@ -1,16 +1,21 @@
 interface Props {
+    date: Date;
     title: string;
-    states: boolean[];
+    bookings: boolean[];
 }
 
 function List(props: Props) {
-    console.log(props.states);
+    const handleClick = (e: any) => {
+        e.target.setAttribute("disabled", true);
+        console.log(props.date.toLocaleDateString());
+    };
+
     return (
         <div>
-            <h3>{props.title}</h3>
-            {props.states[0] ? <button>FM</button> : null}
-            {props.states[1] ? <button>EM</button> : null}
-            {props.states[2] ? <button>Kväll</button> : null}
+            <h4>{props.title}</h4>
+            {props.bookings[0] ? <button onClick={handleClick}>FM-passet</button> : null}
+            {props.bookings[1] ? <button onClick={handleClick}>EM-passet</button> : null}
+            {props.bookings[2] ? <button onClick={handleClick}>Kvälls-passet</button> : null}
         </div>
     );
 }

@@ -10,10 +10,23 @@
 
 .inner-container h3 {
     margin-top: 0;
-    padding: 0;
     margin-bottom: 20px;
     font: bold 15px Arial;
     color: #88eaac;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 14px 0;
+}
+
+.inner-container h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font: bold 14px Arial;
+    color: #555555;
     text-align: center;
     border: 1px solid #e5e5e5;
     border-radius: 5px;
@@ -69,4 +82,10 @@
     background-color: #67be87;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.inner-container button:disabled {
+    background-color: #f0f0f0;
+    color: #ababab;
+    cursor: auto;
 }

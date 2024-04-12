@@ -10,10 +10,10 @@ function Schedule(props: Props) {
         <div className="inner-container">
             <h3>{props.date.toLocaleDateString()}</h3>
             <div id="left-inner-container">
-                <List title={"Varm"} states={[true, false, true]} />
+                <List date={props.date} title={"Varma spa-paketet"} bookings={[true, true, true]} />
             </div>
             <div id="right-inner-container">
-                <List title={"Kall"} states={[true, false, true]} />
+                <List title={"Kalla spa-paketet"} bookings={[true, true, true]} />
             </div>
         </div>
     );
