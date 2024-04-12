@@ -8,4 +8,4 @@
 
 ### 3. Skriv sedan "npm install" följt av "npm dev run" i terminalen.
 
-### 4. Öppna sist upp länken i terminalen med din webbläsare. Sen är det fritt fram att testa hur allt fungerar.
+### 4. Öppna sist upp länken i terminalen med din webbläsare. Sen är det fritt fram att testa.
