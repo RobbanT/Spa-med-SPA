@@ -2,7 +2,7 @@
 
 ![](spa-med-spa.png)
 
-### 1. Ladda ner [spa-med-spa](https://github.com/RobbanT/spa-med-spa).
+### 1. Ladda ner [spa-med-spa](https://github.com/RobbanT/spa-med-spa/archive/refs/heads/main.zip).
 
 ### 2. Öppna upp projektet i Visual Studio Code.
 
