@@ -13,7 +13,6 @@ class ScheduleData {
     }
 
     public save(): void {
-        console.log(this);
         localStorage.setItem(this.date, JSON.stringify(this));
     }
 
@@ -27,14 +26,13 @@ interface Props {
 }
 
 function Schedule(props: Props) {
-    let scheduleData: ScheduleData;
+    let scheduleData: ScheduleData = new ScheduleData(props.date.toLocaleDateString(), [true, true, true], [true, true, true]);
 
-    if (localStorage.getItem(props.date.toLocaleDateString()) === null) {
-        scheduleData = new ScheduleData(props.date.toLocaleDateString());
-        scheduleData.save();
-    } else {
-        scheduleData = ScheduleData.load(props.date.toLocaleDateString());
-    }
+    fetch("http://localhost:8080/reservation/" + props.date.toLocaleDateString())
+        .then((res) => res.json())
+        .then((data) => {
+            scheduleData = new ScheduleData(data.date, data.hotBookings, data.coldBookings);
+        });
 
     return (
         <div className="inner-container">

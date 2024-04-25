@@ -17,7 +17,17 @@ function List(props: Props) {
         } else {
             props.scheduleData.coldBookings[e.target.getAttribute("id") as number] = false;
         }
-        localStorage.setItem(props.scheduleData.date, JSON.stringify(props.scheduleData));
+        fetch("http://localhost:8080/reservation/" + props.scheduleData.date, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                date: props.scheduleData.date,
+                coldBookings: props.scheduleData.coldBookings,
+                hotBookings: props.scheduleData.hotBookings,
+            }),
+        });
         rerender(!render);
     };
 
