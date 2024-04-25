@@ -7,7 +7,7 @@ import "./Calendar.css";
 type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 let closedDays: Date[];
-fetch("http://sholiday.faboul.se/dagar/v2.1/2024")
+fetch("https://sholiday.faboul.se/dagar/v2.1/2024")
     .then((res) => res.json())
     .then((data) => {
         closedDays = data.dagar.filter((day: any) => day.hasOwnProperty("helgdag") || day.veckodag === "Måndag").map((day: any) => new Date(day.datum));
