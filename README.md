@@ -1,4 +1,4 @@
-# Spa Med Spa
+# Spa med Spa
 
 ![](spa-med-spa.png)
 
